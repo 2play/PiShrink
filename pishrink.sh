@@ -1,4 +1,16 @@
 #!/bin/bash
+#INSTALL:
+#wget https://raw.githubusercontent.com/Drewsif/PiShrink/master/pishrink.sh
+#chmod +x pishrink.sh
+#sudo mv pishrink.sh /usr/local/bin
+#OPTIONS:
+#-s prevents automatic filesystem expansion on the images next boot
+#-v enables more verbose output
+#-r will attempt to repair the filesystem using additional options if the normal repair fails
+#-z will compress the image after shrinking using gzip. .gz extension will be added to the filename.
+#-Z will compress the image after shrinking using xz. .xz extension will be added to the filename.
+#-a will use option -f9 for pigz and option -T0 for xz and compress in parallel.
+#-d will create a logfile pishrink.log which may help for problem analysis.
 
 version="v0.1.2"
 
